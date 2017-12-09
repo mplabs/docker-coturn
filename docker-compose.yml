@@ -25,3 +25,7 @@ services:
     volumes:
       - ./log:/var/log
 
+networks:
+  default:
+    external:
+      name: "webproxy"
